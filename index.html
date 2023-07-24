@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <select id="dropdown">
+        <option value="USD">USD</option>
+        <option value="GBP">GBP</option>
+        <option value="CAD">CAD</option>
+        <option value="EU">EU</option>
+    </select>
+
+    <div class="dropdown-list-container">
+        <div class="dropdown-menu" onclick="openDropdown()">
+            Choose Value
+            <span><i class="fa fa-solid fa-chevron-down"></i></span>
+        </div>
+        <div class="dropdown-list" id="list">
+            <div class="currency-wrapper">
+                <span class="currency-icon USD"></span>
+                <p class="currency-item">USD</p>
+            </div>
+            <div class="currency-wrapper">
+                <span class="currency-icon GBP"></span>
+                <p class="currency-item">GBP</p>
+            </div>
+            <div class="currency-wrapper">
+                <span class="currency-icon CAD"></span>
+                <p class="currency-item">CAD</p>
+            </div>
+            <div class="currency-wrapper">
+                <span class="currency-icon EU"></span>
+                <p class="currency-item">EU</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
