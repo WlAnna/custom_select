@@ -8,15 +8,26 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="beanstalk.css">
 </head>
 
 <body>
+    <script src="easydropdown.js"></script>
+    <!--https://www.cssscript.com/accessible-easy-dropdown/#google_vignette-->
+    <select id="select">
+        <option value="USD">USD</option>
+        <option value="GBP">GBP</option>
+        <option value="CAD">CAD</option>
+        <option value="EU">EU</option>
+        <option value="EU">AUD</option>
+    </select>
 
     <select id="dropdown">
         <option value="USD">USD</option>
         <option value="GBP">GBP</option>
         <option value="CAD">CAD</option>
         <option value="EU">EU</option>
+        <option value="EU">AUD</option>
     </select>
 
     <div class="dropdown-list-container">
@@ -41,8 +52,33 @@
                 <span class="currency-icon EU"></span>
                 <p class="currency-item">EU</p>
             </div>
+            <div class="currency-wrapper">
+                <span class="currency-icon AUD"></span>
+                <p class="currency-item">AUD</p>
+            </div>
 
         </div>
+    </div>
+
+
+    <h2 class="container__title">Multiple custom dropdowns from select element</h2>
+    <div id="container" class="container">
+
+        <select id="normal-select-1" placeholder-text="Item 1">
+            <option value="1" class="select-dropdown__list-item">Item 1</option>
+            <option value="2" class="select-dropdown__list-item">Item 2</option>
+            <option value="3" class="select-dropdown__list-item">Item 3</option>
+            <option value="4" class="select-dropdown__list-item">Item 4</option>
+        </select>
+        <!-- The only thing that needs to be different is select ID -->
+        <select id="normal-select-2" placeholder-text="Item 1">
+            <option value="1" class="select-dropdown__list-item">Item 1</option>
+            <option value="2" class="select-dropdown__list-item">Item 2</option>
+            <option value="3" class="select-dropdown__list-item">Item 3</option>
+            <option value="4" class="select-dropdown__list-item">Item 4</option>
+            <option value="5" class="select-dropdown__list-item">Item 5</option>
+            <option value="6" class="select-dropdown__list-item">Item 6</option>
+        </select>
     </div>
 
 

@@ -53,6 +53,10 @@ body {
     content: url(icons/eu.svg);
 }
 
+.AUD {
+    content: url(icons/aud.svg);
+}
+
 .fa-chevron-down {
     font-size: 8px;
     padding-left: 3px;
